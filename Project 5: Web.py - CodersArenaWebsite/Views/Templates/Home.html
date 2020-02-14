@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https:////cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+
+<div class="container">
+    $if session['user'] == None:
+        <h1> Hellooo CodersArena!</h1>
+    $else:
+        <div class="row">
+            <ul class="sidebar">
+                <li class="active"><a href="#"><span class="mdi mdi-home"> </span> Home </a> </li>
+                <li><a href="#"><span class="mdi mdi-account-circle"> </span> Profile </a> </li>
+                <li><a href="#"><span class="mdi mdi-email"> </span> Messages </a> </li>
+                <li><a href="#"><span class="mdi mdi-google-circles-group"> </span> Friends </a> </li>
+                <li><a href="#"><span class="mdi mdi-google-circles-communities"> </span> Communities </a> </li>
+                <li><a href="#"><span class="mdi mdi-bell"> </span> Notifications </a> </li>
+
+                <li class="separator"></li>
+
+                <li><a href="#"><span class="mdi mdi-settings"> </span> Setting </a> </li>
+                <li><a href="#"><span class="mdi mdi-help-circle"> </span> Help </a> </li>
+            </ul>
+            <div class="col-md-4">
+                <div class="post-box">
+                    <form id="post-activity">
+                        <textarea style="width:100%;margin-top:5px;height:90px;border:1px thick black;padding:2%;font:22px/30px sans-serif;" name="content" class="post-input" placeholder="What's on your mind, $session['user']['name']?"></textarea>
+                        <button type="submit" name="post-button" class="btn btn-info btn-raised waves-effect" ><span class="mdi mdi-send"></span>  Post</button>
+                    </form>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="header">
+                        <a href="/profile">$session['user']['name']</a>
+                    </div>
+                    <div class="content">
+                        <h6>Text</h6>
+                    </div>
+                    <div class="footer">
+                        <button class="btn btn-round waves-effect btn-info btn-raised btn-like "><span class="mdi mdi-thumb-up-outline"></span></button>
+                        <button class="btn btn-round waves-effect btn-info btn-raised btn-comment "><span class="mdi mdi-comment-text-outline"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
