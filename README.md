@@ -8,6 +8,7 @@ please note course link can be changed if server is moved, if link is not workin
 # About this Course:
 
 Learn Python with projects covering game & web development, web scraping, MongoDB, Django, PyQt, and data visualization
+
 Lectures: 147
 Video: 18.5 hours
 
