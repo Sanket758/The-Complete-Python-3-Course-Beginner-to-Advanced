@@ -15,14 +15,23 @@ Video: 18.5 hours
 The following topics are covered in this course:
 
 Programming basics
+
 Python fundamentals
+
 JavaScript Object Notation (JSON)
+
 Web scraping
+
 PyMongo (MongoDB)
+
 Web Development
+
 Django Web Framework
+
 Graphical User Interface (GUI) Programming (PyQt)
+
 Data visualization
+
 Speech Recogniton
 
 
