@@ -23,6 +23,7 @@ Web Development
 Django Web Framework
 Graphical User Interface (GUI) Programming (PyQt)
 Data visualization
-Machine learning
+Speech Recogniton
+
 
 # Instructors: Joseph Delgadillo & Nick Germaine
