@@ -1,0 +1,4 @@
+requests==2.22.0
+beautifulsoup4==4.8.2
+pyaudio==0.2.11
+selenium==3.141.0
