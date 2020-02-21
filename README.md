@@ -26,3 +26,7 @@ Data visualization
 Speech Recogniton  
 
 # Instructors: Joseph Delgadillo & Nick Germaine
+
+Note: Before running any project please run requirements.txt  
+run: pip install -r requirements.txt in your shell  
+Creating virtualenvs are recommended.
