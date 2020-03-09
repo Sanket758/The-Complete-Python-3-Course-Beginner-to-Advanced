@@ -1,0 +1,19 @@
+{% extends 'baselayout.html' %}
+
+{% block content %}
+    <div class="container" style="display:flex;">
+        <div class="col-md-3" style="display:inline-block">
+            {% for post in posts %}
+                <div >
+                    <div class="summary-title"><a href="/post/{{ post.slug }}"> {{post.title}}</a></div>
+                    <div class="summary"> {{post.summary}} </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-9" style="float:left;">
+            {% block entry %}
+            {% endblock %}
+        </div>
+
+    </div>
+{% endblock %}

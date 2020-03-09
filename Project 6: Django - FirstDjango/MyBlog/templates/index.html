@@ -1,0 +1,24 @@
+{% extends 'baselayout.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="thin center"> Trending Posts </h1>
+            </div>
+
+            {% for post in posts %}
+            <div class="col-md-4">
+                <div class="card card-image" style="background-image:url({{post.image.url}});">
+                    <div class="card-body">
+                        <div class="card-text d-flex align-items-center py-5 px-4">
+                            <h3><a href="/post/{{ post.slug }}">  {{ post.title }} </a> </h3>
+                        </div>
+                    </div>
+                    <p>{{ post.summary }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
